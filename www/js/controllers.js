@@ -11,6 +11,9 @@ angular.module('starter.controllers', [])
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
+
+  $scope.game = '@';
+
 })
 
 .controller('AccountCtrl', function($scope) {
